@@ -7,6 +7,7 @@
 - [queues](queues/main.go)
 - [priority queues](priority-queues/main.go)
 - [stacks](stacks/main.go)
+- [linked list](linked-list/main.go)
 
 ### Linear vs Non-Linear Data Structures
 
