@@ -1,6 +1,6 @@
 # ds-go
 
-Data Structures in Go
+## Data Structures in Go
 
 - [arrays/slices](arrays)
 - [sets](sets)
@@ -9,7 +9,7 @@ Data Structures in Go
 
 ### Linear vs Non-Linear Data Structures
 
-[Source] (https://www.tutorialspoint.com/difference-between-linear-and-non-linear-data-structures)
+[Source](https://www.tutorialspoint.com/difference-between-linear-and-non-linear-data-structures)
 
 #### Linear
 
