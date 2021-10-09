@@ -2,10 +2,10 @@
 
 ## Data Structures in Go
 
-- [arrays/slices](arrays)
-- [sets](sets)
-- [queues](queues)
-- [priority queues](priority-queues)
+- [arrays/slices](arrays/main.go)
+- [sets](sets/main.go)
+- [queues](queues/main.go)
+- [priority queues](priority-queues/main.go)
 
 ### Linear vs Non-Linear Data Structures
 
