@@ -6,6 +6,7 @@
 - [sets](sets/main.go)
 - [queues](queues/main.go)
 - [priority queues](priority-queues/main.go)
+- [stacks](stacks/main.go)
 
 ### Linear vs Non-Linear Data Structures
 
