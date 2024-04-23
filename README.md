@@ -8,6 +8,7 @@
 - [priority queues](priority-queues/main.go)
 - [stacks](stacks/main.go)
 - [linked list](linked-list/main.go)
+- [breadth-first search (bfs)](bfs/main.go)
 
 ### Linear vs Non-Linear Data Structures
 
