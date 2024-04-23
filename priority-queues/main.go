@@ -10,7 +10,7 @@ type PriorityQueue struct {
 	Low  []int
 }
 
-// adds element to the end of our queue
+// Enqueue adds element to the end of our queue
 func (q *PriorityQueue) Enqueue(elem int, highPriority bool) {
 	if highPriority {
 		q.High = append(q.High, elem)
@@ -19,7 +19,7 @@ func (q *PriorityQueue) Enqueue(elem int, highPriority bool) {
 	}
 }
 
-// returns the first element of the queue
+// Dequeue returns the first element of the queue
 func (q *PriorityQueue) Dequeue() (int, error) {
 
 	// check high priorirty queue is not empty
@@ -33,9 +33,9 @@ func (q *PriorityQueue) Dequeue() (int, error) {
 		return firstElement, nil
 	}
 
-	// check low priorirty queue is not empty
+	// check low priority queue is not empty
 	if len(q.Low) != 0 {
-		// get first element frim low priorirty queue
+		// get first element from low priority queue
 		firstElement := q.Low[0]
 
 		// update low queue to start at position 1 (removing index 0)
@@ -56,7 +56,7 @@ func (q *PriorityQueue) IsEmpty() bool {
 	return q.Length() == 0
 }
 
-// returns first element of queue without updating queue
+// Peek returns first element of queue without updating queue
 func (q *PriorityQueue) Peek() (int, error) {
 	if len(q.High) != 0 {
 		return q.High[0], nil

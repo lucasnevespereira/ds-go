@@ -13,7 +13,7 @@ type Node struct {
 	Next  *Node
 }
 
-// Adds a new element to the start of the linked list
+// Insert Adds a new element to the start of the linked list
 func (l *LinkedList) Insert(elem string) {
 	node := Node{
 		Value: elem,
@@ -31,13 +31,13 @@ func (l *LinkedList) Insert(elem string) {
 // Linked list looks like:
 // "AnotherValue" -> "TestValue" -> nil
 
-// Removes the first element from the linked list
+// DeleteFirst Removes the first element from the linked list
 func (l *LinkedList) DeleteFirst() {
 	l.Head = l.Head.Next
 	l.Size--
 }
 
-// Iterates through all linked list elements and prints them
+// List Iterates through all linked list elements and prints them
 func (l *LinkedList) List() {
 	current := l.Head
 	for current != nil {
@@ -46,7 +46,7 @@ func (l *LinkedList) List() {
 	}
 }
 
-// Searches through every element of the linked list
+// Search Searches through every element of the linked list
 // and returns the first element that matches the string (elem)
 func (l *LinkedList) Search(elem string) *Node {
 	current := l.Head
@@ -60,7 +60,7 @@ func (l *LinkedList) Search(elem string) *Node {
 	return nil
 }
 
-// Removes an element from the linked list if it matches
+// Delete Removes an element from the linked list if it matches
 func (l *LinkedList) Delete(elem string) {
 	previous := l.Head
 	current := l.Head

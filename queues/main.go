@@ -9,12 +9,12 @@ type Queue struct {
 	Elements []int
 }
 
-// adds element to the end of our queue
+// Enqueue adds element to the end of our queue
 func (q *Queue) Enqueue(elem int) {
 	q.Elements = append(q.Elements, elem)
 }
 
-// returns the first element of the queue
+// Dequeue returns the first element of the queue
 func (q *Queue) Dequeue() (int, error) {
 
 	// validate queue as not empty
